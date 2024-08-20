@@ -1,0 +1,68 @@
+city                          : boston
+simulation_num                : 500000
+test_simulation_num           : 2000
+use_given_data                : True
+condition_num                 : 5
+capacity_scale                : 10
+weight_quantization_scale     : None
+max_connection                : 4
+train_data_dir                : ./data
+test_data_dir                 : ./data_test
+batch_size                    : 256
+block_size                    : 50
+observe_ratio                 : 0.5
+special_mask_value            : 0.0001
+n_embd                        : 64
+n_head                        : 16
+n_layer                       : 8
+dropout                       : 0.0
+use_adj_table                 : True
+max_epochs                    : 10
+learning_rate                 : 0.01
+lr_drop_rate                  : 0.5
+eval_freq                     : 10
+save_freq                     : 5
+device                        : cuda:0
+seed                          : 0
+load_dir                      : ./checkpoints_none/
+load_dir_id                   : 0
+boston has 241 nodes, add 0 for sepcial token, now vocab size is 242
+Data loaded in 0.0035071372985839844 seconds
+Model loaded in 0.29102015495300293 seconds
+start training from iteration 0
+Train epoch      1/10    |  Loss: 0.40429440  |  Acc: 87.62%   |  Acc_inner: 88.64%   |  LR: 0.00975528  | Load data time: 0.09...m  |  Preprocess data time: 0.19   m  |  Forward time: 2.11   m  |  Backward time: 18.96  m  |  Total time: 21.35  m
+Test epoch      1/10    |  Loss: 0.33364511  |  Acc: 85.58%   |  Acc_inner: 90.36%   |  Real True Rate: 0.00%    |  Time: 0.04   m
+
+Train epoch      2/10    |  Loss: 0.10352965  |  Acc: 94.75%   |  Acc_inner: 96.35%   |  LR: 0.00904508  | Load data time: 0.10...m  |  Preprocess data time: 0.22   m  |  Forward time: 2.08   m  |  Backward time: 18.95  m  |  Total time: 21.35  m
+Test epoch      2/10    |  Loss: 0.12888709  |  Acc: 94.99%   |  Acc_inner: 95.18%   |  Real True Rate: 14.86%   |  Time: 0.04   m
+
+Model saved at iteration 2, time: 0.11720037460327148
+Train epoch      3/10    |  Loss: 0.11378795  |  Acc: 96.31%   |  Acc_inner: 95.61%   |  LR: 0.00793893  | Load data time: 0.09...m  |  Preprocess data time: 0.29   m  |  Forward time: 2.06   m  |  Backward time: 18.92  m  |  Total time: 21.37  m
+Test epoch      3/10    |  Loss: 0.10976340  |  Acc: 96.67%   |  Acc_inner: 95.69%   |  Real True Rate: 28.48%   |  Time: 0.04   m
+
+Train epoch      4/10    |  Loss: 0.10012175  |  Acc: 97.12%   |  Acc_inner: 95.23%   |  LR: 0.00654508  | Load data time: 0.09...m  |  Preprocess data time: 0.26   m  |  Forward time: 2.08   m  |  Backward time: 18.95  m  |  Total time: 21.38  m
+Test epoch      4/10    |  Loss: 0.09860239  |  Acc: 97.09%   |  Acc_inner: 95.80%   |  Real True Rate: 33.62%   |  Time: 0.04   m
+
+Model saved at iteration 4, time: 0.11879372596740723
+Train epoch      5/10    |  Loss: 0.12410334  |  Acc: 96.31%   |  Acc_inner: 93.68%   |  LR: 0.00500000  | Load data time: 0.09...m  |  Preprocess data time: 0.24   m  |  Forward time: 2.06   m  |  Backward time: 18.93  m  |  Total time: 21.32  m
+Test epoch      5/10    |  Loss: 0.09566487  |  Acc: 97.27%   |  Acc_inner: 95.83%   |  Real True Rate: 37.32%   |  Time: 0.04   m
+
+Train epoch      6/10    |  Loss: 0.07396151  |  Acc: 97.00%   |  Acc_inner: 95.90%   |  LR: 0.00345492  | Load data time: 0.10...m  |  Preprocess data time: 0.27   m  |  Forward time: 2.08   m  |  Backward time: 18.95  m  |  Total time: 21.40  m
+Test epoch      6/10    |  Loss: 0.09181710  |  Acc: 97.00%   |  Acc_inner: 95.94%   |  Real True Rate: 34.25%   |  Time: 0.03   m
+
+Model saved at iteration 6, time: 0.1210930347442627
+Train epoch      7/10    |  Loss: 0.07224847  |  Acc: 97.31%   |  Acc_inner: 96.55%   |  LR: 0.00206107  | Load data time: 0.09...m  |  Preprocess data time: 0.29   m  |  Forward time: 2.06   m  |  Backward time: 18.94  m  |  Total time: 21.38  m
+Test epoch      7/10    |  Loss: 0.08862622  |  Acc: 97.14%   |  Acc_inner: 96.03%   |  Real True Rate: 38.17%   |  Time: 0.04   m
+
+Train epoch      8/10    |  Loss: 0.10346029  |  Acc: 96.56%   |  Acc_inner: 95.14%   |  LR: 0.00095492  | Load data time: 0.09...m  |  Preprocess data time: 0.21   m  |  Forward time: 2.05   m  |  Backward time: 18.93  m  |  Total time: 21.27  m
+Test epoch      8/10    |  Loss: 0.08628566  |  Acc: 97.06%   |  Acc_inner: 96.06%   |  Real True Rate: 36.62%   |  Time: 0.04   m
+
+Model saved at iteration 8, time: 0.1157376766204834
+Train epoch      9/10    |  Loss: 0.05794272  |  Acc: 97.75%   |  Acc_inner: 95.94%   |  LR: 0.00024472  | Load data time: 0.09...m  |  Preprocess data time: 0.24   m  |  Forward time: 2.08   m  |  Backward time: 18.92  m  |  Total time: 21.33  m
+Test epoch      9/10    |  Loss: 0.08590617  |  Acc: 97.22%   |  Acc_inner: 96.07%   |  Real True Rate: 37.26%   |  Time: 0.04   m
+
+Train epoch     10/10    |  Loss: 0.08941829  |  Acc: 96.50%   |  Acc_inner: 95.38%   |  LR: 0.00000000  | Load data time: 0.09...m  |  Preprocess data time: 0.22   m  |  Forward time: 2.06   m  |  Backward time: 18.96  m  |  Total time: 21.33  m
+Test epoch     10/10    |  Loss: 0.08634478  |  Acc: 97.04%   |  Acc_inner: 96.02%   |  Real True Rate: 36.83%   |  Time: 0.04   m
+
+Model saved at iteration 10, time: 0.11386442184448242
+Training finished in 3.0 hours 33.0 minutes 50.64962315559387 seconds

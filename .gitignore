@@ -1,0 +1,8 @@
+*.pth
+*.csv
+*.pkl
+data
+data_test
+data_temp
+data_train
+data_bkp
