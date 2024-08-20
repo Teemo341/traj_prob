@@ -1,6 +1,8 @@
 *.pth
 *.csv
 *.pkl
+*.zip
+*.DS_Store
 data
 data_test
 data_temp
